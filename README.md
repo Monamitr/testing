@@ -1,48 +1,58 @@
-# Introduction to Python
+# SQL Homework Review – Day 3 (Chinook)
 
-Welcome to the **Introduction to Python** repository! This repository is designed to help beginners get started with Python programming. Python is a powerful, versatile, and beginner-friendly programming language widely used in web development, data science, automation, and more.
-
----
-
-## Table of Contents
-
-1. [About Python](#about-python)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Getting Started](#getting-started)
-5. [Basic Syntax](#basic-syntax)
-6. [Examples](#examples)
-7. [Resources](#resources)
-8. [Contributing](#contributing)
-9. [License](#license)
+**Student:** Priya  
+**Assignment:** MySQL Homework–3 (Day 3, Chinook)  
+**Score:** 9.5 / 10  
+**Reference:** Grading style inspired by [GRADED HW-4] Olagoke Day Assignment  
 
 ---
 
-## About Python
+## Summary
 
-Python is an interpreted, high-level programming language created by **Guido van Rossum** in 1991. It emphasizes code readability and simplicity, making it ideal for beginners.
-
-**Key characteristics of Python:**
-- Easy to read and write
-- Interpreted language
-- Object-oriented and functional programming support
-- Extensive standard library and community support
-
----
-
-## Features
-
-- Simple and beginner-friendly syntax
-- Cross-platform compatibility
-- Rich ecosystem of libraries and frameworks
-- Ideal for scripting, automation, web development, and data analysis
+- Clean and organized submission covering all prompts.  
+- **Minor correctness issues:**  
+  - Q7: Total range filter (corrected to match prompt).  
+  - Q21: LastName second character pattern (corrected).  
+- **Style suggestions:** Be explicit with `ASC` in `ORDER BY` and avoid extra/unrelated `SELECT`s.  
+- Full corrected solution included below.
 
 ---
 
-## Installation
+## Highlights
 
-1. **Download Python:** [https://www.python.org/downloads/](https://www.python.org/downloads/)
-2. **Install Python** on your system (make sure to check "Add Python to PATH").
-3. **Verify Installation**:
-   ```bash
-   python --version
+### Reading Data
+- Display all invoices; show customer names and phone numbers.
+
+### Derived & Aliased Columns
+- Concatenate names (`CustomerName`) and rename `Total` as `InvoiceAmount`.
+
+### DISTINCT
+- List unique billing countries.
+
+### Filtering (`WHERE`)
+- Filter customers/invoices by country, totals, or combined conditions.
+
+### Sorting (`ORDER BY`)
+- Sort invoices by date and customers by city + first name.
+
+### IN / NOT IN
+- Select customers from specified countries or exclude them.
+
+### Range Filters (`BETWEEN`)
+- Filter totals and invoice dates within ranges.
+
+### NULL Handling
+- Find customers with/without company names.
+
+### Pattern Matching (`LIKE`)
+- Filter by starting letters, substrings, endings, or specific character positions.
+
+---
+
+## Fixed Solution
+
+Full corrected SQL queries are provided in the submission for copy/paste execution. All aliases, ordering, and filters are explicit and consistent.
+
+---
+
+**Instructor Notes:** Excellent work overall. Minor corrections applied; demonstrates strong understanding of SQL fundamentals.
